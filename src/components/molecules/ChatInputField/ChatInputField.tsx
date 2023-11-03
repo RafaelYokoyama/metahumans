@@ -1,17 +1,26 @@
+import React from 'react';
 import FormError from '@/components/atoms/FormError/FormError';
 import Input from '@/components/atoms/Input/Input';
 import Label from '@/components/atoms/Label/Label';
+import { UseFormRegisterReturn } from 'react-hook-form';
 
-import React from 'react';
+type ChatInputFieldProps = {
+  label: string;
+  errorMessage: string;
+  register?: UseFormRegisterReturn
+};
 
-function ChatInputField() {
+
+const ChatInputField: React.FC<ChatInputFieldProps> = ({ label, errorMessage, register }) => {
   return (
     <div>
-      <Label label='teste' />
-      <Input />
-      <FormError message={'teste'} icon='AlertTriangle' />
+      <Label label={label} />
+      <Input register={register} />
+      {errorMessage &&
+        <FormError message={errorMessage} icon='AlertTriangle' />
+      }
     </div>
   );
-}
+};
 
 export default ChatInputField;
