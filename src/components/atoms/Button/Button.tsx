@@ -12,7 +12,7 @@ function Button({ children, type, icon, iconSize }: IButtonProps) {
     <button
       type={type}
       className="
-      w-28
+      min-w-28
       text-white
       font-bold
       h-10
