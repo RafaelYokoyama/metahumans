@@ -10,8 +10,7 @@ function CustomAvatar(props: IAvatarProps) {
   const { name } = props;
 
   return (
-    <Avatar sx={{ width: 56, height: 56, bgcolor: deepPurple[500] }}>
-      {name}
+    <Avatar sx={{ width: 56, height: 56, bgcolor: "#000", }}>
     </Avatar>
   );
 }
