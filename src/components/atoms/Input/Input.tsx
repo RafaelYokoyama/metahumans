@@ -7,7 +7,7 @@ type IInputProps = {
   register?: UseFormRegisterReturn
 };
 
-function Input({ children, type, register }: IInputProps) {
+function Input({ type, register }: IInputProps) {
   return (
 
     <input
