@@ -9,12 +9,11 @@ type IInputProps = {
 
 function Input({ children, type, register }: IInputProps) {
   return (
-    <label className="flex flex-col group h-16">
-      {children}
-      <input
-        {...register}
-        type={type}
-        className="
+
+    <input
+      {...register}
+      type={type}
+      className="
         h-10
         bg-zinc-800
         rounded-lg
@@ -23,10 +22,9 @@ function Input({ children, type, register }: IInputProps) {
         outline-none
         appearance-none
         "
-      />
+    />
 
-      <FormError message={'teste'} icon='AlertTriangle' />
-    </label>
+
   );
 }
 
