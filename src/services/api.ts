@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
+const baseUrl = 'http://homologacao3.azapfy.com.br/api/ps/metahumans' || process.env.NEXT_PUBLIC_API_BASE_URL
 
 export const api = axios.create({
   baseURL: baseUrl,
