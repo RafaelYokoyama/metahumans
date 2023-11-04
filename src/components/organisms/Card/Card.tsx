@@ -1,7 +1,8 @@
-import Icon from '@/components/atoms/Icon/Icon';
-import cardColor from '@/utils/cardColor';
+import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { twMerge } from 'tailwind-merge';
+import cardColor from '@/utils/cardColor';
+import Icon from '@/components/atoms/Icon/Icon';
 
 type CardProps = {
   imgSrc?: string;
@@ -10,74 +11,59 @@ type CardProps = {
   powerstats?: number;
   handleClick?: () => void;
   selected?: boolean;
+  resetSelection?: () => void;
 };
 
-function Card({ imgAlt, imgSrc, name, powerstats = 0, handleClick, selected }: CardProps) {
+function Card({ imgAlt, imgSrc, name, powerstats = 0, handleClick, selected, resetSelection }: CardProps) {
   const [bgColor, borderColor] = cardColor(powerstats);
 
+  const handleCardClick = () => {
+    if (handleClick) {
+      handleClick();
+    }
+  };
+
+
   const cardClasses = twMerge(
-    'w-[204px]',
+    'w-[179px]',
     'cursor-pointer',
     'rounded-md',
     selected ? 'border-3' : 'border-2',
     borderColor,
+    selected ? 'p-3' : 'p-4',
     'm-2',
     'flex',
     'flex-col',
     'items-center',
-    'p-4',
+    'transition-all'
   );
 
   const imageClasses = twMerge(
     'w-[174px]',
-    'h-[184px]',
+    'h-[144px]',
     'rounded-md',
     'shadow-md',
     'flex',
     'items-center',
-    'justify-center'
-  );
-
-
-  const powerStatsContainerClasses = twMerge(
-    'flex',
-    'items-center',
     'justify-center',
-    'gap-1'
+    selected ? 'filter grayscale' : '',
+    'transition-all'
   );
 
-  const powerStatsTextClasses = twMerge(
-    'mt-4',
-    'text-[#A3A994]',
-    'font-bold',
-    'text-lg'
-  );
+  const powerStatsContainerClasses = twMerge('flex', 'items-center', 'justify-center', 'gap-1');
 
-  const textClasses = twMerge(
-    'text-center',
-    'text-[#A3A994]',
-    'font-bold',
-    'text-lg',
-    'uppercase',
-    'pt-4',
-  );
+  const powerStatsTextClasses = twMerge('mt-4', 'text-[#A3A994]', 'font-bold', 'text-lg');
+
+  const textClasses = twMerge('text-center', 'text-[#A3A994]', 'font-bold', 'text-lg', 'uppercase', 'pt-4');
 
   return (
-
     <div
       className={cardClasses}
-      style={{ background: bgColor, transition: 'width 0.35s ease-in-out', borderColor: borderColor }}
-      onClick={handleClick}
+      style={{ background: bgColor, borderColor: borderColor }}
+      onClick={handleCardClick}
     >
-      <img
-        src={imgSrc}
-        alt={imgAlt}
-        className={imageClasses}
-        style={{ borderColor: borderColor, transition: 'width 0.35s ease-in-out' }}
-      />
-      <Typography className={textClasses}>
-        {name?.toUpperCase()}
-      </Typography>
+      <img src={imgSrc} alt={imgAlt} className={imageClasses} style={{ borderColor: borderColor }} />
+      <Typography className={textClasses}>{name?.toUpperCase()}</Typography>
       <Box className={powerStatsContainerClasses}>
         <Icon name="PowerCircleIcon" />
         <Typography className={powerStatsTextClasses}>

@@ -1,4 +1,3 @@
-// CustomModal.tsx
 import React from 'react';
 import { Dialog, DialogActions, Button } from '@mui/material';
 

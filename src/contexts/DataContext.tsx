@@ -11,7 +11,7 @@ type DataContextType = {
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 const DataProvider = ({ children }: { children: ReactNode }) => {
-  useState<Heroes[] | null>(null);
+
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [data, setData] = useState<Heroes[] | null>(null);
 
