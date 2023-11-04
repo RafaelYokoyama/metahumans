@@ -41,7 +41,7 @@ const DataProvider = ({ children }: { children: ReactNode }) => {
 
 const useDataContext = () => {
   const context = useContext(DataContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useDataContext must be used within a DataProvider');
   }
   return context;
