@@ -1,14 +1,14 @@
-"use client"
-import React, { useContext } from 'react'
-import { AuthContext, useAuth } from '@/contexts/AuthContext';
-import DrawerMenu from '@/components/organisms/DrawerMenu/DrawerMenu';
+'use client'
+
+import React, { useState } from 'react';
+import CardPagination from '@/components/organisms/CardPagination/CardPagination';
 
 function Dashboard() {
-  const { user } = useContext(AuthContext)
 
   return (
-    <>
-      <DrawerMenu />
+    < >
+      <CardPagination />
+
     </>
   );
 }
