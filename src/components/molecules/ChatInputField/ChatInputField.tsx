@@ -7,20 +7,17 @@ import { UseFormRegisterReturn } from 'react-hook-form';
 type ChatInputFieldProps = {
   label: string;
   errorMessage: string;
-  register?: UseFormRegisterReturn
+  register?: UseFormRegisterReturn;
 };
 
-
-const ChatInputField: React.FC<ChatInputFieldProps> = ({ label, errorMessage, register }) => {
+function ChatInputField({ label, errorMessage, register }: ChatInputFieldProps) {
   return (
     <div>
       <Label label={label} />
       <Input register={register} />
-      {errorMessage &&
-        <FormError message={errorMessage} icon='AlertTriangle' />
-      }
+      {errorMessage && <FormError message={errorMessage} icon='AlertTriangle' />}
     </div>
   );
-};
+}
 
 export default ChatInputField;
