@@ -1,4 +1,5 @@
 "use client";
+import Loading from '@/components/atoms/Loading/Loading';
 import { api } from '@/services/api';
 import { Heroes } from '@/types/heroes';
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
@@ -31,7 +32,7 @@ const DataProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   if (isLoading) {
-    return <div>Carregando dados...</div>;
+    return <Loading />
   }
 
   return (
