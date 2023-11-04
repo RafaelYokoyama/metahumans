@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "@mui/material/Avatar";
-import { deepPurple } from "@mui/material/colors";
+
 
 type IAvatarProps = {
   size?: number;
