@@ -48,6 +48,7 @@ function LoginContainer() {
           errorMessage={(errors.login && "Usuário é obrigatório") || ""}
         />
         <ChatInputField
+          type='password'
           register={register("password", { required: true })}
           label="Senha"
           errorMessage={(errors.password && "Senha é obrigatório") || ""}

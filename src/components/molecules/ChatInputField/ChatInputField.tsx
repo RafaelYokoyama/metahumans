@@ -8,13 +8,14 @@ type ChatInputFieldProps = {
   label: string;
   errorMessage: string;
   register?: UseFormRegisterReturn;
+  type?: string;
 };
 
-function ChatInputField({ label, errorMessage, register }: ChatInputFieldProps) {
+function ChatInputField({ label, errorMessage, register, type }: ChatInputFieldProps) {
   return (
     <div>
       <Label label={label} />
-      <Input register={register} />
+      <Input register={register} type={type} />
       {errorMessage && <FormError message={errorMessage} icon='AlertTriangle' />}
     </div>
   );
