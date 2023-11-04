@@ -1,4 +1,3 @@
-// PaginationComponent.tsx
 import React from 'react';
 import Pagination from '@mui/material/Pagination';
 import { makeStyles } from '@material-ui/styles';
@@ -25,7 +24,7 @@ function PaginationComponent({ count, page, onChange }: PaginationProps) {
       page={page}
       onChange={onChange}
       variant="outlined"
-      color="secondary"
+      color="primary"
       classes={{ ul: classes.pagination }}
     />
   );
