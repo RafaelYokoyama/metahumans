@@ -3,15 +3,18 @@ import Avatar from "@mui/material/Avatar";
 import { deepPurple } from "@mui/material/colors";
 
 type IAvatarProps = {
-  name?: string;
+  size?: number;
 };
 
-function CustomAvatar(props: IAvatarProps) {
-  const { name } = props;
-
+function CustomAvatar({ size }: IAvatarProps) {
   return (
-    <Avatar sx={{ width: 56, height: 56, bgcolor: "#000", }}>
-    </Avatar>
+    <Avatar
+      sx={{
+        width: size || 56,
+        height: size || 56,
+        bgcolor: "#000",
+      }}
+    ></Avatar>
   );
 }
 
