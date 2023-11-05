@@ -3,7 +3,8 @@ import { Dialog, DialogActions, Button } from '@mui/material';
 
 import { Heroes } from '@/types/heroes';
 import DialogTitleComponent from '@/components/atoms/DialogTitle/DialogTitle';
-import DialogContentComponent from '@/components/atoms/DialogContent/DialogContent';
+import DialogContentComponent from '../DialogContent/DialogContent';
+
 
 type ModalProps = {
   isOpen: boolean;
