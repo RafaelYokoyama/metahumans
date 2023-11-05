@@ -36,7 +36,7 @@ function Input({ type, register, onChange, className, icon, ...rest }: IInputPro
             bg-zinc-800
             rounded-lg
             p-2
-            ${icon ? 'pl-10 ml-2' : ''}
+            ${icon ? 'ml-10' : ''}
             focus:border-2
             outline-none
             appearance-none
