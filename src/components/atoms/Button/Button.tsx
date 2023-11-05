@@ -11,6 +11,7 @@ type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 function Button({ children, icon, iconSize, className, ...rest }: IButtonProps) {
   return (
     <button
+      data-testid='form-button'
       className={`
         min-w-28
         text-white
