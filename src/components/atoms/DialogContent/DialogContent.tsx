@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { Heroes, PowerStats } from "@/types/heroes";
 import { calculateTotalPower } from "@/utils/calculateTotalPower";
-import { statIcons } from "@/constants/contants";
+import { statIcons } from "@/constants/constants";
 
 type IDialogContentProps = {
   selectedHeroes: Heroes[];
