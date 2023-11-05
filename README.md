@@ -12,6 +12,12 @@
 ![demo_web](https://github.com/RafaelYokoyama/metahumans/blob/master/.github/screen-hero.gif)
 
 
+## 🚀 Screens
+
+![image](https://github.com/RafaelYokoyama/metahumans/assets/118087476/08f73102-dcfe-4f3d-b601-abbf34e6fa40)
+
+
+
 ## 🚀 Technologies
 - [Nextjs](https://nextjs.org/)
 - [Axios](https://axios-http.com/docs/intro)
