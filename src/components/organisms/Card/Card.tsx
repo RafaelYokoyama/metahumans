@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { twMerge } from 'tailwind-merge';
 import cardColor from '@/utils/cardColor';
 import Icon from '@/components/atoms/Icon/Icon';
+import Image from 'next/image';
 
 type CardProps = {
   imgSrc?: string;
@@ -62,7 +63,13 @@ function Card({ imgAlt, imgSrc, name, powerstats = 0, handleClick, selected, res
       style={{ background: bgColor, borderColor: borderColor }}
       onClick={handleCardClick}
     >
-      <img src={imgSrc} alt={imgAlt} className={imageClasses} style={{ borderColor: borderColor }} />
+      <Image
+        src={imgSrc || ''}
+        alt={imgAlt || ''}
+        width={174}
+        height={144}
+        className={imageClasses}
+        style={{ borderColor: borderColor }} />
       <Typography className={textClasses}>{name?.toUpperCase()}</Typography>
       <Box className={powerStatsContainerClasses}>
         <Icon name="PowerCircleIcon" />
