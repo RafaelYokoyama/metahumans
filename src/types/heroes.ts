@@ -16,3 +16,13 @@ export type Heroes = {
     lg: string
   }
 };
+
+
+export type PowerStats = {
+  intelligence: string;
+  strength: string;
+  speed: string;
+  durability: string;
+  power: string;
+  combat: string;
+};
