@@ -63,11 +63,10 @@ function Header({ searchTerm, handleSearchChange }: IHeaderProps) {
           </Menu>
 
           <Input
-            style={{ flex: 1, marginLeft: "20px" }}
             type="text"
             value={searchTerm}
             onChange={handleSearchChange}
-            placeholder="Nome do Herói 🦸🏿‍♂️"
+            placeholder="Nome do Herói 🦸🏿‍♂️ "
             icon
           />
         </Toolbar>
