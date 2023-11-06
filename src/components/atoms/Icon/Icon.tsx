@@ -3,7 +3,7 @@ import { ComponentType } from "react"
 
 export type IconName = keyof typeof lucideIcons;
 
-type IconProps = {
+export type IconProps = {
   color?: string
   size?: number
   className?: string
