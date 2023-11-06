@@ -17,7 +17,6 @@
 ![image](https://github.com/RafaelYokoyama/metahumans/assets/118087476/08f73102-dcfe-4f3d-b601-abbf34e6fa40)
 
 
-
 ## 🚀 Technologies
 - [Nextjs](https://nextjs.org/)
 - [Axios](https://axios-http.com/docs/intro)
@@ -25,7 +24,9 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React Hook Form](https://react-hook-form.com/)
-- [material Ui](https://mui.com/material-ui/)
+- [Material Ui](https://mui.com/material-ui/)
+- [Jest](https://jestjs.io/pt-BR/docs/getting-started)
+- [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
   
 ## :white_check_mark: Requirements
 
@@ -35,9 +36,9 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone  https://github.com/RafaelYokoyama/metahumans.gi
+$ git clone https://github.com/RafaelYokoyama/metahumans.git
 # Access
-$ cd new_portfolio
+$ cd metahumans
 # Install dependencies
 $ yarn or npm
 # Run the project
