@@ -5,9 +5,9 @@
 <h1 align="center"> Meta Humans 
 </h1>
 
-🦸 Frontend para o projeto Hero, uma aplicação  web que permite aos usuários explorar uma lista de heróis, filtrar por nome / poder e realizar batalhas entre eles! . 👊 <br>
+🦸 Frontend for the Hero project, a web application that allows users to explore a list of heroes, filter by name/power and perform battles between them! . 👊 <br>
 
-> :hammer_and_wrench: Tecnologias e ferramentas: **TypeScript, Next.js, Axios, @mui/material, lucide-react, tailwindcss**
+> :hammer_and_wrench:  Technologies and tools: **TypeScript, Next.js, Axios, @mui/material, lucide-react, tailwindcss , Jest**
 
 ![demo_web](https://github.com/RafaelYokoyama/metahumans/blob/master/.github/screen-hero.gif)
 
