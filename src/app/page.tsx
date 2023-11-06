@@ -1,5 +1,3 @@
-
-import LoginContainer from '@/components/organisms/LoginContainer/LoginContainer'
 import ScreenLogin from '@/components/organisms/ScreenLogin/ScreenLogin'
 
 export default function Home() {
