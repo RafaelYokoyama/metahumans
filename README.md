@@ -14,7 +14,7 @@
 
 ## 🚀 Screens
 
-![image](https://github.com/RafaelYokoyama/metahumans/assets/118087476/08f73102-dcfe-4f3d-b601-abbf34e6fa40)
+![image](https://github.com/RafaelYokoyama/metahumans/blob/master/.github/screens.png)
 
 
 ## 🚀 Technologies
